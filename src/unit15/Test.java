@@ -1,27 +1,30 @@
 package unit15;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import javax.print.DocFlavor.STRING;
+
 class Person {}
 class Pet {}
 
 public class Test {
-
-	static void f(Map<Person, List<? extends Pet>> petPeople) {
-		System.out.println("haha");
+	
+	void f(List<String> ls) {
+		
 	}
 	
-	static <K, V> Map<K, V> map() {
-		return new HashMap<K, V>();
-	}
+
+	
 	
 	public static void main(String[] args) {
 		
-		f(Test.map());
+
+		
 	}
 	
 }

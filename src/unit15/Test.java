@@ -9,17 +9,8 @@ import java.util.Random;
 
 import javax.print.DocFlavor.STRING;
 
-class Person {}
-class Pet {}
 
 public class Test {
-	
-	void f(List<String> ls) {
-		
-	}
-	
-
-	
 	
 	public static void main(String[] args) {
 		

@@ -72,6 +72,9 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
 		m.put("lin", "llll");
 		m.put("pei", "pppppp");
 		m.put("you", "yyyyyou");
+		m.put("pei", "peyton");
+		m.put("gagag", "waka");
+		m.put("lis", "alice");
 		System.out.println(m);
 		System.out.println(m.get("pei"));
 		System.out.println(m.entrySet());

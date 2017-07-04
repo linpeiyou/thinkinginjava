@@ -23,7 +23,7 @@ class Element {
 	
 	@Override
 	public boolean equals(Object obj) {
-		return obj instanceof CanonicalMapping &&
+		return obj instanceof Element &&
 				ident.equals(((Element) obj).ident);
 	}
 	
@@ -50,8 +50,19 @@ class Value extends Element {
 public class CanonicalMapping {
 	
 	public static void main(String[] args) throws InterruptedException {
-
-		
+		int SIZE = 16;
+		WeakHashMap<Key, Value> map = new WeakHashMap<>();
+		Key[] keys = new Key[SIZE];
+		for(int i = 0; i < SIZE; ++i) {
+			Key key = new Key(String.valueOf(i));
+			Value value = new Value(String.valueOf(i));
+			if(i % 3 == 0) {
+				keys[i] = key;
+			}
+			map.put(key, value);
+		}
+		System.gc();
+		Thread.sleep(1000);
 	}
 }
 

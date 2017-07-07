@@ -1,8 +1,6 @@
-package unit17;
+package util;
 
 import java.util.ArrayList;
-
-import util.Generator;
 
 public class CollectionData<T> extends ArrayList<T> {
 

@@ -15,7 +15,7 @@ public class RandomGenerator {
 	
 	public static class Byte implements Generator<java.lang.Byte> {
 		@Override
-		public java.lang.Byte next() {
+		public java.lang.Byte next() { 
 			return (byte) r.nextInt();
 		}
 	}

@@ -1,9 +1,7 @@
-package unit17;
+package util;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import util.Generator;
 
 class Government implements Generator<String> {
 	String[] foundation = ("strange women lying in ponds "
